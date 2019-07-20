@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculator_Activity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Calculator Binary"
+            android:textSize="30dp"
+            android:textColor="@color/colorBlueViolet"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="95dp"
+            android:layout_marginLeft="25dp"
+            android:text="Input Type : "/>
+
+        <Spinner
+            android:id="@+id/spinnerCalculatorChoose"
+            android:layout_width="193dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="93dp"
+            android:entries="@array/ChooseCalculator" />
+        <EditText
+            android:id="@+id/FirstBinary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="128dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="86dp"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="196dp" />
+        <TextView
+            android:id="@+id/FirstDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginRight="25dp"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="196dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="185dp"
+            android:layout_marginLeft="25dp"
+            android:text="Operator : "/>
+        <Spinner
+            android:id="@+id/spinnerCalculatorOperator"
+            android:layout_marginTop="183dp"
+            android:layout_marginLeft="110dp"
+            android:layout_width="190dp"
+            android:entries="@array/operator"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/SecondBinary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="218dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="86dp"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="196dp" />
+        <TextView
+            android:id="@+id/SecondDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp"
+            android:layout_marginTop="230dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginRight="25dp"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="196dp" />
+
+        <Button
+            android:id="@+id/Calculate"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="400dp"
+            android:text="Calculate" />
+
+        <Button
+            android:id="@+id/Clear"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="400dp"
+            android:layout_marginLeft="190dp"
+            android:text="Clear" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result : "
+            android:layout_marginTop="290dp"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:id="@+id/Result"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="318dp"
+            android:layout_marginRight="86dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/ResultDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp"
+            android:layout_marginTop="318dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginRight="25dp"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="196dp" />
+    </FrameLayout>
+
+
+
+</ScrollView>

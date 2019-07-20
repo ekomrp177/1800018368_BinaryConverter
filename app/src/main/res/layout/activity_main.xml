@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backToMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.projectarsikom.MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/simple_converter"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlueViolet"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/Calculator"
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:text="@string/calculator_binary" />
+        <Button
+            android:id="@+id/DecimalConverter"
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/decimal_converter"
+            android:layout_marginStart="20dp" />
+        <Button
+            android:id="@+id/Creator"
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/creator"
+            android:layout_marginStart="20dp" />
+    </FrameLayout>
+
+</ScrollView>

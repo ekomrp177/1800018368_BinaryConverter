@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.projectarsikom.Decimaltobinary">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Converter"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlueViolet"
+                android:layout_marginTop="40dp"/>
+        </FrameLayout>
+        <Spinner
+            android:id="@+id/spinnerTypeConverter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:entries="@array/ConverterType">
+        </Spinner>
+        <EditText
+            android:id="@+id/InputData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number|numberSigned"
+            android:layout_marginTop="20dp" />
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+        <TableRow>
+            <Button
+                android:id="@+id/Converter"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Convert" />
+
+            <Button
+                android:id="@+id/ClearConverter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear"/>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="40dp">
+            <TableRow
+                android:layout_height="37dp">
+                <TextView android:id="@+id/TextView1"
+                    android:textSize="18dp"
+                    android:text="Decimal"/>
+                <TextView
+                    android:text="     : "/>
+
+                <TextView
+                    android:id="@+id/TextView1Result"
+                    android:layout_width="221dp"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="18dp" />
+            </TableRow>
+            <TableRow
+                android:layout_height="37dp">
+
+                <TextView android:id="@+id/TextView2"
+                    android:textSize="18dp"
+                    android:text="Binary"/>
+                <TextView
+                    android:text="     : "/>
+                <TextView
+                    android:layout_width="102dp"
+                    android:id="@+id/TextView2Result"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="18dp" />
+            </TableRow>
+            <TableRow
+                android:layout_height="37dp">
+
+                <TextView android:id="@+id/TextView3"
+                    android:textSize="18dp"
+                    android:text="Sign/Magnitude"/>
+                <TextView
+                    android:text="     : "/>
+                <TextView
+                    android:layout_width="102dp"
+                    android:id="@+id/TextView3Result"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="18dp" />
+            </TableRow>
+            <TableRow
+                android:layout_height="37dp">
+
+                <TextView
+                    android:textSize="18dp"
+                    android:text="One's Complement"/>
+                <TextView
+                    android:text="     : "/>
+                <TextView
+                    android:layout_width="102dp"
+                    android:id="@+id/TextView4Result"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="18dp"/>
+            </TableRow>
+            <TableRow
+                android:layout_height="37dp">
+
+                <TextView
+                    android:textSize="18dp"
+                    android:text="Two's Complement"/>
+                <TextView
+                    android:text="     : "/>
+                <TextView
+                    android:layout_width="102dp"
+                    android:id="@+id/TextView5Result"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="18dp" />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

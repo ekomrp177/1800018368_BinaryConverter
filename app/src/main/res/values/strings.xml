@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Project Arsikom</string>
+    <string name="binary_converter">Binary Converter</string>
+    <string name="simple_converter">Simple Converter</string>
+    <string name="calculator_binary">Calculator Binary</string>
+    <string name="creator">Creator</string>
+    <string name="decimal_converter">Decimal Converter</string>
+    <string name="PenutpBio">Last Project
+
+    Computer architecture and organization</string>
+    <string-array name="operator">
+        <item>+ (Penjumlahan)</item>
+        <item>- (Pengurangan)</item>
+        <item>/ (Pembagian)</item>
+        <item>x (Perkalian)</item>
+    </string-array>
+
+    <string-array name="ChooseCalculator">
+        <item>Binary</item>
+        <item>Sign/Magnitude</item>
+    </string-array>
+
+    <string-array name="ConverterType">
+        <item>Decimal</item>
+        <item>Binary</item>
+        <item>Sign/Magnitude</item>
+        <item>One s Complement</item>
+        <item>Two s Complement</item>
+    </string-array>
+</resources>
